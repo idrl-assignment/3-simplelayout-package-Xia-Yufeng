@@ -15,5 +15,5 @@ def main():
     save_fig(matrix, path + args.file_name)
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
