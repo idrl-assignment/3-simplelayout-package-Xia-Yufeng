@@ -29,7 +29,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.2.2',  # Required
+    version='0.2.3',  # Required
 
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
@@ -44,7 +44,7 @@ setup(
     #
     # This field corresponds to the "Description" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#description-optional
-    # long_description=long_description,  # Optional
+    long_description=long_description,  # Optional
 
     # Denotes that our long_description is in Markdown; valid values are
     # text/plain, text/x-rst, and text/markdown
@@ -56,7 +56,7 @@ setup(
     #
     # This field corresponds to the "Description-Content-Type" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
-    # long_description_content_type='text/markdown',  # Optional (see note above)
+    long_description_content_type='text/markdown',  # Optional (see note above)
 
     # This should be a valid link to your project's main homepage.
     #
@@ -66,11 +66,11 @@ setup(
 
     # This should be your name or the name of the organization which owns the
     # project.
-    # author='A. Random Developer',  # Optional
+    author='Xia Yufeng',  # Optional
 
     # This should be a valid email address corresponding to the author listed
     # above.
-    # author_email='author@example.com',  # Optional
+    author_email='xiayufeng15@outlook.com',  # Optional
 
     # Classifiers help users find your project by categorizing it.
     #
@@ -135,7 +135,7 @@ setup(
     #
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['numpy', 'matplotlib', 'scipy'],  # Optional
+    install_requires=['numpy', 'matplotlib', 'scipy', 'pytest'],  # Optional
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
@@ -171,8 +171,8 @@ setup(
     # For example, the following would provide a command called `sample` which
     # executes the function `main` from this package when invoked:
     entry_points={  # Optional
-        'console_scripts': [
-            'simplelayout=simplelayout:main',
+        'simplelayout': [
+            'simplelayout=simplelayout.__main__:main',
         ],
     },
 
